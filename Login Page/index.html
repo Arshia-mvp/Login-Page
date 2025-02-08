@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div id="login-form">
+            <h2>لطفا اطلاعات را وارد کنید</h2>
+            <form id="form">
+                <div class="form-group">
+                    <label for="username">Username :</label>
+                    <input type="text" id="username" name="username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password :</label>
+                    <input type="password" id="password" name="password">
+                    <i class="fa fa-eye toggle-password"></i>
+                </div>
+                <button type="submit">ورود به صفحه بعدی</button>
+                <p id="error-message" class="error"></p>
+                <p id="timer-message"></p>
+            </form>
+        </div>
+        <div id="upload-page" style="display: none;">
+            <h2>لطفا تصویر را آپلود کنید</h2>
+            <input type="file" id="image-upload" accept="image/*">
+            <p id="file-size-error" class="error"></p>
+            <img class="img" id="uploaded-image" src="#" alt="تصویر آپلود شده" style="max-width: 300px; display: none;">
+        </div>
+    </div>
+    <script src="./js/javascript.js"></script>
+</body>
+</html>
